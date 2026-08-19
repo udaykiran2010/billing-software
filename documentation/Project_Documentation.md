@@ -1,5 +1,7 @@
 # Project Documentation — Akash Store Billing Software
 
+**GitHub Repository:** https://github.com/udaykiran2010/billing-software
+
 ## 1. Introduction
 
 This project is a desktop-based billing and inventory management system built for a retail store. It replicates the real-world workflow of a point-of-sale (POS) counter: staff log in with role-based access, manage products and customers, generate invoices with GST and discount calculations, track inventory, and view sales reports.
@@ -63,7 +65,7 @@ The database consists of five tables:
 - One `invoice` can contain many `invoice_items` (one-to-many)
 - One `product` can appear in many `invoice_items` across different invoices (one-to-many)
 
-See `database/billing_db_schema.sql` for the full script, and `documentation/ER_Diagram.png` for the visual diagram.
+See `database/schema.sql` for the full script, and `documentation/ER-Diagram.png` for the visual diagram.
 
 ## 6. Key Features and Implementation Notes
 
@@ -96,7 +98,7 @@ A JUnit 5 test suite covers:
 - Integration-level edge cases against the real database: insufficient stock during billing, and preventing a double-cancellation of the same invoice
 - Product validation rules (blank name, negative price, negative stock)
 
-See `test-results/` for a screenshot of the test run results.
+See `screenshots/11_TestCases.png` for the JUnit test run results (11/11 passing).
 
 ## 8. Conclusion
 
